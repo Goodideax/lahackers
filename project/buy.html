@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>UC Swiper</title>
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" type="text/css"  href="css/style1.css">
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Karla:700,400|Inconsolata'>
+	<!-- Web Fonts
+  ================================================== -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	
+	<!-- JS
+  ================================================== -->
+  	<script src="../js/jquery-2.0.3.min.js"></script>
+  	<script src="http://code.jquery.com/jquery-1.5.2.min.js" language="javascript"></script>
+</head>
+<body>
+	<!-- Primary Page Layout
+	================================================== -->
+	
+	<!-- Header -->
+	<div id="header">
+	
+		<!-- 960 Container -->
+		<div class="container">
+		
+			<!-- Logo -->
+			<div class="four columns">
+					<div id="logo">UC Swpier</div>
+			</div>
+			
+			<div class="twelve columns">
+			
+				<!-- Menu -->
+				<div id="navigation">
+				  <ul>
+					<li><a href="sale.html">Sale List</a></li>
+					<li><a id="current" href="buy.html">Buy List</a></li>
+				  </ul>
+				</div>			
+	
+			</div>
+		</div>
+	</div>
+	<!-- End Header -->
+	
+	<!-- Page Subtitle -->
+	<div id="main">
+	
+		<!-- 960 Container -->
+		<div class="container">
+			<div class="sixteen columns">
+				<form action="buy.php" method="post" class="basic-grey">
+				    <h1>I Want To Buy!</h1>
+				    <input class="name" type="text" name="name" placeholder="Name" />
+				    <input class="email" type="text" name="email" placeholder="Email" />
+				    <!--input class="location" type="text" name="location" placeholder="Meal Location" /-->
+				    <select name="selection" class= "location">
+        				<option value="UCLA Feast">UCLA Feast</option>
+        				<option value="Ackerman Union">Ackerman Union</option>
+        				<option value="Panda Express">Panda Express</option>
+        				<option value="Vicky Sushi">Vicky Sushi</option>
+        			</select>
+				    <input class="price" type="text" name="price" placeholder="Price " /> 
+				    <input class="amount" type="text" name="amount" placeholder="Num" />  
+				    <input class="start-time" type="text" name="start-time" placeholder=" Start Time" />
+				    <input class="end-time" type="text" name="end-time" placeholder="End Time" />
+				    <input type="submit" class="button" name="buy"value="GO !" /> 
+				</form>
+			</div>
+		</div>
+		<!-- End 960 Container -->
+	
+	</div><!-- End Page Subtitle -->
+	
+	<!-- 960 Container -->
+	<div id="list-background">
+		<!-- Page Subtitle -->
+	<div id="lists">
+		<!-- 960 Container -->
+		<div class="container">
+			<div class="seven-left columns">
+				<div class = "display">
+					<h1>UCLA FEAST</h1>
+					<table class="flat-table" cellspacing="0">
+						<tbody>
+						    <tr>
+						      <td>Huiting Zhang</td>
+						      <td>$ 5.00</td>
+						      <td>2 swipes</td>
+						      <td>18:00 - 19:00</td>
+						      <td class = "del">delete</td>
+						    </tr>
+						    <tr>
+						      <td>Wenting</td>
+						      <td>$ 5.00</td>
+						      <td>4 swipes</td>
+						      <td>17:00 - 19:00</td>
+						      <td class = "contact">contact</td>
+						    </tr>
+						    <tr>
+						      <td>Huiting</td>
+						      <td>$ 5.00</td>
+						      <td>2 swipes</td>
+						      <td>18:00 - 19:00</td>
+						      <td class = "del">delete</td>
+						    </tr>
+						    <tr>
+						      <td>Wenting</td>
+						      <td>$ 5.00</td>
+						      <td>4 swipes</td>
+						      <td>17:00 - 19:00</td>
+						      <td class = "contact">contact</td>
+						    </tr>
+						    <tr>
+						      <td>Huiting</td>
+						      <td>$ 5.00</td>
+						      <td>2 swipes</td>
+						      <td>18:00 - 19:00</td>
+						      <td class = "contact">contact</td>
+						    </tr>
+						    <tr>
+						      <td>Wenting</td>
+						      <td>$ 5.00</td>
+						      <td>4 swipes</td>
+						      <td>17:00 - 19:00</td>
+						      <td class = "contact">contact</td>
+						    </tr>
+						</tbody>
+					</table>
+					<div class = "pagination">
+						<div class = "sort">
+							<a href="#">sort by time </a>
+							<span> | </span>
+							<a href="#">sort by price </a>
+						</div>
+						<div class = "nav">
+							<a href="#">first</a>
+							<span> | </span>
+							<a href="#">prev</a>
+							<span> | </span>
+							<a href="#">1 / 5</a>
+							<span> | </span>
+							<a href="#">next</a>
+							<span> | </span>
+							<a href="#">last </a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="seven-right columns">
+				<div class = "display">
+					<h1>Ackerman Union</h1>
+					<table class="flat-table" cellspacing="0">
+						<tbody>
+						    <tr>
+						      <td>Huiting Zhang</td>
+						      <td>$ 5.00</td>
+						      <td>2 swipes</td>
+						      <td>18:00 - 19:00</td>
+						      <td class = "contact">contact</td>
+						    </tr>
+						    <tr>
+						      <td>Wenting</td>
+						      <td>$ 5.00</td>
+						      <td>4 swipes</td>
+						      <td>17:00 - 19:00</td>
+						      <td class = "contact">contact</td>
+						    </tr>
+						    <tr>
+						      <td>Huiting</td>
+						      <td>$ 5.00</td>
+						      <td>2 swipes</td>
+						      <td>18:00 - 19:00</td>
+						      <td class = "contact">contact</td>
+						    </tr>
+						    <tr>
+						      <td>Wenting</td>
+						      <td>$ 5.00</td>
+						      <td>4 swipes</td>
+						      <td>17:00 - 19:00</td>
+						      <td class = "contact">contact</td>
+						    </tr>
+						    <tr>
+						      <td>Huiting</td>
+						      <td>$ 5.00</td>
+						      <td>2 swipes</td>
+						      <td>18:00 - 19:00</td>
+						      <td class = "contact">contact</td>
+						    </tr>
+						    <tr>
+						      <td>Huiting</td>
+						      <td>$ 5.00</td>
+						      <td>2 swipes</td>
+						      <td>18:00 - 19:00</td>
+						      <td class = "contact">contact</td>
+						    </tr>
+						</tbody>
+					</table>
+					<div class = "pagination">
+						<div class = "sort">
+							<a href="#">sort by time </a>
+							<span> | </span>
+							<a href="#">sort by price </a>
+						</div>
+						<div class = "nav">
+							<a href="#">first</a>
+							<span> | </span>
+							<a href="#">prev</a>
+							<span> | </span>
+							<a href="#">1 / 5</a>
+							<span> | </span>
+							<a href="#">next</a>
+							<span> | </span>
+							<a href="#">last </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "divider"></div>
+			<div class = "seven-left columns">
+			<div class = "display">
+				<h1>Panda Express</h1>
+				<table class="flat-table" cellspacing="0">
+					
+					<tbody>
+					    <tr>
+					      <td>Huiting Zhang</td>
+					      <td>$ 5.00</td>
+					      <td>2 swipes</td>
+					      <td>18:00 - 19:00</td>
+					      <td class = "contact">contact</td>
+					    </tr>
+					    <tr>
+					      <td>Wenting</td>
+					      <td>$ 5.00</td>
+					      <td>4 swipes</td>
+					      <td>17:00 - 19:00</td>
+					      <td class = "contact">contact</td>
+					    </tr>
+					    <tr>
+					      <td>Huiting</td>
+					      <td>$ 5.00</td>
+					      <td>2 swipes</td>
+					      <td>18:00 - 19:00</td>
+					      <td class = "contact">contact</td>
+					    </tr>
+					    <tr>
+					      <td>Wenting</td>
+					      <td>$ 5.00</td>
+					      <td>4 swipes</td>
+					      <td>17:00 - 19:00</td>
+					      <td class = "contact">contact</td>
+					    </tr>
+					    <tr>
+					      <td>Huiting</td>
+					      <td>$ 5.00</td>
+					      <td>2 swipes</td>
+					      <td>18:00 - 19:00</td>
+					      <td class = "contact">contact</td>
+					    </tr>
+					    <tr>
+					      <td>Wenting</td>
+					      <td>$ 5.00</td>
+					      <td>4 swipes</td>
+					      <td>17:00 - 19:00</td>
+					      <td class = "contact">contact</td>
+					    </tr>
+					  </tbody>
+					</table>
+					<div class = "pagination">
+						<div class = "sort">
+							<a href="#">sort by time </a>
+							<span> | </span>
+							<a href="#">sort by price </a>
+						</div>
+						<div class = "nav">
+							<a href="#">first</a>
+							<span> | </span>
+							<a href="#">prev</a>
+							<span> | </span>
+							<a href="#">1 / 5</a>
+							<span> | </span>
+							<a href="#">next</a>
+							<span> | </span>
+							<a href="#">last </a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="seven-right columns">
+				<div class = "display">
+					<h1>Vicky Sushi</h1>
+					<table class="flat-table" cellspacing="0">
+						<tbody>
+						    <tr>
+						      <td>Huiting Zhang</td>
+						      <td>$ 5.00</td>
+						      <td>2 swipes</td>
+						      <td>18:00 - 19:00</td>
+						      <td class = "contact">contact</td>
+						    </tr>
+						    <tr>
+						      <td>Wenting</td>
+						      <td>$ 5.00</td>
+						      <td>4 swipes</td>
+						      <td>17:00 - 19:00</td>
+						      <td class = "contact">contact</td>
+						    </tr>
+						    <tr>
+						      <td>Huiting</td>
+						      <td>$ 5.00</td>
+						      <td>2 swipes</td>
+						      <td>18:00 - 19:00</td>
+						      <td class = "contact">contact</td>
+						    </tr>
+						    <tr>
+						      <td>Wenting</td>
+						      <td>$ 5.00</td>
+						      <td>4 swipes</td>
+						      <td>17:00 - 19:00</td>
+						      <td class = "contact">contact</td>
+						    </tr>
+						    <tr>
+						      <td>Huiting</td>
+						      <td>$ 5.00</td>
+						      <td>2 swipes</td>
+						      <td>18:00 - 19:00</td>
+						      <td class = "contact">contact</td>
+						    </tr>
+						    <tr>
+						      <td>Huiting</td>
+						      <td>$ 5.00</td>
+						      <td>2 swipes</td>
+						      <td>18:00 - 19:00</td>
+						      <td class = "contact">contact</td>
+						    </tr>
+						</tbody>
+					</table>
+					<div class = "pagination">
+						<div class = "sort">
+							<a href="#">sort by time </a>
+							<span> | </span>
+							<a href="#">sort by price </a>
+						</div>
+						<div class = "nav">
+							<a href="#">first</a>
+							<span> | </span>
+							<a href="#">prev</a>
+							<span> | </span>
+							<a href="#">1 / 5</a>
+							<span> | </span>
+							<a href="#">next</a>
+							<span> | </span>
+							<a href="#">last </a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+		<!-- End 960 Container -->
+	
+	</div><!-- End Page Subtitle -->
+		
+	</div>
+	<!-- End 960 Container -->
+	<!--  Footer - Copyright-->
+	<div id="footer_bottom">
+		<!-- 960 Container -->
+		<div class="container">
+			<div class="eight columns">
+				<div class="copyright">Copyright 2015. All Rights Reserved. 
+				</div>
+			</div>	
+			<div class="eight columns">
+				<div class="author-info">
+					Designed by Team Swiper
+				</div>
+			</div>
+		</div><!-- End 960 Container -->
+	</div>
+	
+	<!-- JavaScript -->
+	
+</body>
+</html>
